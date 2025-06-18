@@ -1,43 +1,27 @@
 @import "tailwindcss";
 
+/* LIGHT MODE */
 :root {
-  --color-primary: #2539eb65; /* blue-600 */
-  --color-primary-hover: #1d4ed8; /* blue-700 */
-  --color-primary-light: #3b82f6; /* blue-500 */
-  --color-secondary: #4f46e5; /* indigo-700 */
-  --color-text: #111827; /* gray-900 */
-  --color-text-light: #374151; /* gray-700 */
-  --color-text-lighter: #6b7280; /* gray-600 */
-  --color-text-white: #ffffff;
-  --color-text-white-muted: rgba(255, 255, 255, 0.9);
-  --color-bg: #0a0a0a;
-  --color-bg-alt: #050505; /* gray-50 */
-  --color-bg-dark: #181818; /* gray-900 */
-  --color-bg-dark-alt: #131313; /* gray-800 */
+  /* Backgrounds */
+  --bg-primary: #f9fafb;     /* light background */
+  --bg-secondary: #f3f4f6;   /* alt background */
+  --bg-accent: #e0e7ff;      /* light indigo */
+
+  /* Text */
+  --text-primary: #1e293b;   /* slate-800 */
+  --text-secondary: #4b5563; /* gray-600 */
+  --text-accent: #2563eb;    /* blue-600 */
 }
 
-/* Dark mode variables */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: #ffffff;
-    --color-text-light: #e5e7eb; /* gray-200 */
-    --color-text-lighter: #9ca3af; /* gray-400 */
-  }
-}
+/* DARK MODE */
+.dark {
+  /* Backgrounds */
+  --bg-primary: #0a0a0a;     /* near black */
+  --bg-secondary: #18181b;   /* gray-900 */
+  --bg-accent: #1e40af;      /* blue-900 */
 
-body {
-  @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-white;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.glass-bg {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.12);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  /* Text */
+  --text-primary: #f3f4f6;   /* gray-100 */
+  --text-secondary: #9ca3af; /* gray-400 */
+  --text-accent: #60a5fa;    /* blue-400 */
 }
